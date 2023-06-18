@@ -1,0 +1,191 @@
+li {
+  list-style-type: none;
+}
+
+body {
+  background: #c9cfe1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list > li > a {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #111238;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  
+  
+  
+  
+.text > h1 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #111238;
+  padding: 15px 15px;
+}
+
+.main-text > h2 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #111238;
+  padding: 0 15px;
+}
+
+.search-writing {
+  display: flex;
+  padding: 20px 15px;
+  background-color: #ffffff;
+  width: 290px;
+  height: 70px;
+  border: 1px solid rgba(209, 209, 209, 0.1);
+  box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  margin-top: 51px;
+}
+
+body {
+  background: #f2f3f6;
+}
+
+.search-block {
+  background: #1a75e8;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  position: absolute;
+  right: 15px;
+  height: 45px;
+  width: 68.44px;
+}
+
+.search-block > button > i {
+  color: #ffffff;
+}
+
+.search-block > button {
+  background: #1a75e8;
+  border-style: none;
+  cursor: pointer;
+}
+.search {
+  align-items: center;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Inputs/Grey */
+
+  color: #b2b2b2;
+}
+.btn {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+
+  width: 148px;
+  height: 49px;
+
+  /* Buttons/Primary */
+
+  background: #1a75e8;
+  border-radius: 5px;
+}
