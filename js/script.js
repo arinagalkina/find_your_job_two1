@@ -1,17 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var hamburger = document.querySelector(".hamburger");
-  var navMenu = document.querySelector(".nav-menu");
 
-  hamburger.addEventListener("click", function() {
-    hamburger.classList.toggle("open");
-    navMenu.classList.toggle("open");
+  const hamburger = document.querySelector('.hamburger');
+  const headerMenu = document.querySelector('.header_menu');
+  const headerList = document.querySelector('.header_list');
+
+  hamburger.addEventListener('click', () => {
+    headerMenu.classList.toggle('active');
   });
 
-  var menuItems = document.querySelectorAll(".list > li");
-  menuItems.forEach(function(item) {
-    item.addEventListener("click", function() {
-      navMenu.classList.remove("open");
-      hamburger.classList.remove("open");
-    });
+  headerList.addEventListener('click', () => {
+    headerMenu.classList.remove('active');
   });
-});
+
+
