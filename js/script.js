@@ -1,14 +1,11 @@
+window.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".header_menu");
+  const hamburger = document.querySelector(".hamburger");
 
-  const hamburger = document.querySelector('.hamburger');
-  const headerMenu = document.querySelector('.header_menu');
-  const headerList = document.querySelector('.header_list');
-
-  hamburger.addEventListener('click', () => {
-    headerMenu.classList.toggle('active');
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("hamburger_active");
+    menu.classList.toggle("menu_active");
   });
-
-  headerList.addEventListener('click', () => {
-    headerMenu.classList.remove('active');
-  });
+});
 
 

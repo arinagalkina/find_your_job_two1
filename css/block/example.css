@@ -1,0 +1,35 @@
+.example_list>li>button {
+    display: flex;
+    width: 83px;
+    height: 27px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #B2B2B2;
+}
+.example {
+    color: #b2b2b2;
+    font-size: 14px;
+    font-family: Fira Sans;
+    font-weight: normal;
+    
+
+  }
+  .example_list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .example_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main_pic {
+    display: block;
+    margin: 0 auto;
+  }

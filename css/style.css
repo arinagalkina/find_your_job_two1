@@ -1,6 +1,11 @@
 @import "./block/variables.css";
 @import "./block/header.css";
 @import"./block/sections.css";
+@import "./block/categories.css";
+@import "./block/example.css";
+@import "./block/vacancies.css";
 @import "./block/media.css";
+
+
 
 

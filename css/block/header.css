@@ -48,10 +48,13 @@ header {
   margin-bottom: 5px;
 }
 .header_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   position: fixed;
-  left: 0;
+  left: -100%;
   top: 0;
   width: 50%;
   height: 100vh;
@@ -64,7 +67,7 @@ header {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   padding: 0;
 }
 .menu_item {
@@ -75,15 +78,37 @@ header {
 .header_list:hover {
   color: #1A75E8;
 }
+
+.hamburger_active span:nth-child(1) {
+  transform: translateY(5px) rotate(-45deg);
+}
+
 .hamburger_active span:nth-child(2) {
   display: none;
-
 }
-.hamburger_active span:nth-child(1) {
-  transform: rotate(45deg)translateY(5px);
-  
 
-}
 .hamburger_active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-5px);
+  transform: translateY(-3px) rotate(45deg);
+}
+.menu_active {
+  left: 0;
+}
+.signin {
+  color:#111238;
+  font-size: 16px;
+  font-family: Fira Sans;
+
+}
+.btn {
+  color: #FFF;
+font-size: 16px;
+font-family: Fira Sans;
+border-radius: 5px;
+background: #1A75E8;
+display: inline-flex;
+padding: 15px 30px;
+justify-content: center;
+align-items: center;
+gap: 20px;
+border: none;
 }
