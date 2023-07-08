@@ -16,7 +16,7 @@
     
 
   }
-  .example_list {
+  .find_example_list {
     display: flex;
     flex-direction: row;
     gap: 10px;

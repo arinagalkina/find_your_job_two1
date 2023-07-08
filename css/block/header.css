@@ -11,17 +11,6 @@ header a:hover {
   color: #1a75e8;
 }
 
-li {
-  list-style: none;
-
-  padding: 15px 3px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  border: none;
-  color: #ffffff;
-}
-
 .header_box {
   display: none;
 }
@@ -72,11 +61,11 @@ header {
 }
 .menu_item {
   color: #111238;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Fira Sans;
 }
 .header_list:hover {
-  color: #1A75E8;
+  color: #1a75e8;
 }
 
 .hamburger_active span:nth-child(1) {
@@ -94,21 +83,29 @@ header {
   left: 0;
 }
 .signin {
-  color:#111238;
+  color: #111238;
   font-size: 16px;
   font-family: Fira Sans;
-
+  margin-right: 15px;
 }
 .btn {
-  color: #FFF;
-font-size: 16px;
-font-family: Fira Sans;
-border-radius: 5px;
-background: #1A75E8;
-display: inline-flex;
-padding: 15px 30px;
-justify-content: center;
-align-items: center;
-gap: 20px;
-border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: Fira Sans;
+  border-radius: 5px;
+
+  background: #1a75e8;
+  display: inline-flex;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: none;
+}
+.hamburger:hover {
+  transition: 0.7s all;
+}
+
+.logo {
+  width: 130px;
 }

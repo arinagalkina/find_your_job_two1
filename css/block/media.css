@@ -10,9 +10,7 @@
     max-width: 540px;
   }
 
-  .logo {
-    width: 150px;
-  }
+
 }
 
 @media (min-width: 768px) {
@@ -44,16 +42,46 @@
   .header_box {
     display: block;
   }
+  
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
     font-size: 16px;
   }
+  .cards_vacancies {
+   display: flex;
+   flex-wrap: wrap;
+
 }
+}
+ 
+ 
+  
+
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
+  .cards_vacancies > li {
+    width: 1146px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+  }
+   .requir {
+    color: #b2b2b2;
+    font-family: Fira Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+
+   }
+   .div {
+    display: flex;
+    
+   }
 }
